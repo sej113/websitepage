@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+  .header-image-below {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  }
+
+  .header-image-below img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .header-image-below img:hover {
+    transform: scale(1.03);
+  }
+  .car-specs {
+    padding: 50px 20px;
+    background: #f8f8f8;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+
+  .car-specs .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .specs-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+
+  .specs-subtitle {
+    font-size: 28px;
+    margin: 25px 0 15px;
+    color: #555;
+  }
+
+  .spec-item {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #333;
+  }
+
+
+  .animate { opacity:0; transform: translateY(30px); transition: 0.8s ease; }
+  .animate.show { opacity:1; transform: translateY(0); }
+
+  .delay { transition-delay: 0.2s; }
+  .delay2 { transition-delay: 0.4s; }
+  .delay3 { transition-delay: 0.6s; }
+  .delay4 { transition-delay: 0.8s; }
+  .delay5 { transition-delay: 1s; }
+  .delay6 { transition-delay: 1.2s; }
+  @media(max-width:768px){
+    .specs-title { font-size: 28px; }
+    .specs-subtitle { font-size: 22px; }
+    .spec-item { font-size: 16px; }
+  }
+.choose-shade {
+    padding: 60px 20px;
+    background: #f8f8f8;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .shade-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .car-image img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+  }
+
+  .color-options {
+    margin-top: 30px;
+  }
+
+  .colors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform 0.3s, border 0.3s;
+  }
+
+  .color:hover {
+    transform: scale(1.2);
+    border: 2px solid #000;
+  }
+
+  
+  .animate { opacity:0; transform: translateY(30px); transition: 0.8s ease; }
+  .animate.show { opacity:1; transform: translateY(0); }
+
+  .delay { transition-delay: 0.2s; }
+  .delay2 { transition-delay: 0.4s; }
+
+  
+  @media(max-width:768px){
+    .shade-title { font-size: 28px; }
+    .color { width: 35px; height: 35px; }
+  }
+
+  @media(max-width:480px){
+    .shade-title { font-size: 24px; }
+    .color { width: 30px; height: 30px; }
+  }
+.key-highlights {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .highlights-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #111;
+  }
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .highlight-item img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+
+  .highlight-item img:hover {
+    transform: scale(1.05);
+  }
+
+  
+  .animate { opacity:0; transform: translateY(30px); transition: 0.8s ease; }
+  .animate.show { opacity:1; transform: translateY(0); }
+  .delay { transition-delay: 0.2s; }
+
+
+  @media(max-width:1024px){
+    .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media(max-width:600px){
+    .highlights-grid { grid-template-columns: 1fr; }
+    .highlights-title { font-size: 28px; margin-bottom: 30px; }
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+<a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="https://freepnglogo.com/images/all_img/1720112815hyundai-logo-transparent-image.png"  style="height: 36px; width:auto;">
+  <span class="ms-2 fw-bold text-white">Hyundai</span>
+</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+
+      <li class="nav-item">
+        <a class="nav-link active" href="boostrapassignment.html">
+          <i class="bi bi-house-door-fill"></i> Home
+        </a>
+      </li>
+
+      
+
+      <li class="nav-item">
+        <a class="nav-link" href="click to buy.html">
+          <i class="fa-brands fa-servicestack"></i> Click! To Buy
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">
+          <i class="fa-brands fa-intercom"></i>Connect to services 
+        </a>
+      </li>
+      
+<li class="nav-item">
+        <a class="nav-link" href="connect to us.html">
+          <i class="bi bi-envelope-fill"></i> Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="header-image-below">
+  <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/venue-n-line-inner-kv-desk-banner.jpg" alt="Hyundai VENUE" />
+</div>
+<section class="car-specs">
+  <div class="container">
+
+    <h2 class="specs-title animate">Engine & Transmission</h2>
+
+    <p class="spec-item animate delay">
+      <strong>Engine:</strong> Kappa 1.0 l Turbo GDi petrol
+    </p>
+    <p class="spec-item animate delay2">
+      <strong>Transmission:</strong> MT | DCT
+    </p>
+    <p class="spec-item animate delay3">
+      <strong>Variant:</strong> N6 | N10
+    </p>
+
+    <h3 class="specs-subtitle animate delay4">Color Options</h3>
+
+    <p class="spec-item animate delay5">
+      <strong>Mono Tone:</strong> Hazel Blue | Dragon Red | Titan Grey | Atlas White | Abyss Black
+    </p>
+    <p class="spec-item animate delay6">
+      <strong>Dual Tone:</strong> Hazel Blue with Abyss Black Roof | Dragon Red with Abyss Black Roof | Atlas White with Abyss Black Roof
+    </p>
+
+  </div>
+</section>
+<section class="choose-shade">
+  <div class="container">
+
+    <h2 class="shade-title animate">Choose Your Shade of Adventure</h2>
+
+  
+    <div class="car-image animate delay">
+      <img id="carImg" src="https://via.placeholder.com/900x500?text=Atlas+White" alt="Hyundai VENUE" />
+    </div>
+
+  
+    <div class="color-options animate delay2">
+      <p><strong>Mono Tone:</strong></p>
+      <div class="colors">
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/hazel-blue/pc/hazel-blue_5.png" style="background:#b2c4d4"></div>
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/dragon-red/pc/dragon-red_5.png" style="background:#d93434"></div>
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/titan-grey/pc/titan-grey_5.png" style="background:#7d7d7d"></div>
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/atlas-white/pc/atlas-white_5.png" style="background:#ffffff; border:1px solid #ccc;"></div>
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/abyss-black/pc/abyss-black_5.png" style="background:#000000"></div>
+      </div>
+
+      <p style="margin-top:20px;"><strong>Dual Tone:</strong></p>
+      <div class="colors">
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/hazel-blue-dual-tone/pc/hazel-blue-dual-tone_5.png" style="background:#989090"></div>
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/dragon-red-dual-tone/pc/dragon-red-dual-tone_5.png" style="background:rgb(185, 106, 106)"></div>
+        <div class="color" data-img="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/360/hazel-blue-dual-tone/pc/hazel-blue-dual-tone_5.png" style="background:rgb(50, 44, 44)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="key-highlights">
+  <div class="container">
+
+    <h2 class="highlights-title animate">Key Highlights</h2>
+
+    <div class="highlights-grid animate delay">
+      <div class="highlight-item">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/pre-booking/led-drl.jpg" alt="Highlight 1">
+        <p style="font-size: larger; font-weight: bold;">Twin horn LED DRLs |Quad beam LED Headapms | HoriZOne LED positioning lamp </p>
+      </div>
+      <div class="highlight-item">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/pre-booking/diamond-cut-alloy-wheel.jpg" alt="Highlight 2">
+        <p style="font-size: larger; font-weight: bold;">  R17(D=435.6mm) Diamond cut alloy wheel with N emblem</p>
+      </div>
+      <div class="highlight-item">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/pre-booking/steering-wheel.jpg" alt="Highlight 3">
+        <p style="font-size: larger;font-weight: bold;">N line exclusive steering wheel</p>
+      </div>
+      <div class="highlight-item">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue-n-line/pre-booking/gear-shift-knob.jpg" alt="Highlight 4">
+        <p style="font-size: larger; font-weight: bold;">N line exclusive gear shift knob</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="hyundai-footer">
+  <div class="container">
+
+    <div class="footer-logo text-center">
+      <img src="https://www.hyundai.com/content/dam/hyundai/in/en/images/common/footer_logo_pc.png" alt="Hyundai Logo">
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#carsFooter">HYUNDAI CARS</h5>
+        <ul class="collapse show" id="carsFooter">
+          <li><a href="#">SUV Cars</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Creta</a></li>
+          <li><a href="#">Exter</a></li>
+          <li><a href="#">Alcazar</a></li>
+          <li><a href="#">Sedan Cars</a></li>
+          <li><a href="#">Verna</a></li>
+          <li><a href="#">Hatchback Cars</a></li>
+          <li><a href="#">i20</a></li>
+          <li><a href="#">Electric Cars</a></li>
+          <li><a href="#">Ioniq 5</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#buyFooter">CLICK TO BUY</h5>
+        <ul class="collapse show" id="buyFooter">
+          <li><a href="#">Online Booking</a></li>
+          <li><a href="#">Online Finance</a></li>
+          <li><a href="#">Shopping Assist</a></li>
+          <li><a href="#">Request a Test Drive</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">EV Charging Station</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#serviceFooter">HYUNDAI SERVICE</h5>
+        <ul class="collapse show" id="serviceFooter">
+          <li><a href="#">Book a Service</a></li>
+          <li><a href="#">Warranty Policy</a></li>
+          <li><a href="#">Roadside Assistance</a></li>
+          <li><a href="#">Service Package</a></li>
+          <li><a href="#">Owner’s Manual</a></li>
+          <li><a href="#">PMS Charts</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#storyFooter">HYUNDAI STORY</h5>
+        <ul class="collapse show" id="storyFooter">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="footer-social mt-3">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom mt-4">
+      <div>© 2026 Hyundai Motor India. All Rights Reserved.</div>
+      <div>Hyundai Suppliers | Hyundai Worldwide</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* Scroll reveal animation */
+const animateItems = document.querySelectorAll('.animate');
+
+function animateOnScroll() {
+  animateItems.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 50) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+animateOnScroll();
+
+/* Color changer */
+const colors = document.querySelectorAll('.color');
+const carImg = document.getElementById('carImg');
+
+colors.forEach(color => {
+  color.addEventListener('click', () => {
+    const newImg = color.getAttribute('data-img');
+    carImg.src = newImg;
+  });
+});
+</script>
+
+
+</body>
+</html>

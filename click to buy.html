@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hyundai Venue Price Mumbai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .venue-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .venue-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg,#ffcc00,#ff5e00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+    }
+
+    .venue-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      background: #141414;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 40px rgba(255,94,0,0.25);
+    }
+
+    .venue-img img {
+      width: 100%;
+      border-radius: 16px;
+      transition: transform 0.4s ease;
+    }
+
+    .venue-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .venue-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .venue-info p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .price-box {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 14px;
+      margin: 20px 0;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .total {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #00ffcc;
+      border-top: 1px solid #333;
+      padding-top: 10px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg,#ff5e00,#ffcc00);
+      color: #000;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255,94,0,0.6);
+    }
+
+    @media (max-width: 768px) {
+      .venue-card {
+        grid-template-columns: 1fr;
+      }
+      .venue-title {
+        font-size: 2.2rem;
+      }
+    }
+    .venue-card {
+  padding: 30px;
+  gap: 30px;
+}
+.venue-card {
+  padding: 20px;     
+  gap: 20px;       
+}
+.price-box {
+  padding: 20px;
+  margin: 20px 0;
+}
+.price-box {
+  padding: 12px;    
+  margin: 12px 0;
+}
+.buy-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+}
+.buy-btn {
+  padding: 10px 18px;  
+  font-size: 0.9rem;
+}
+.popup-content {
+  padding: 25px;
+}
+.popup-content {
+  padding: 18px;
+  max-width: 320px;   
+}
+.venue-img img {
+  width: 100%;
+}
+.venue-img img {
+  width: 95%;
+}
+.popup{
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.7); justify-content:center; align-items:center;
+}
+.popup-content{
+  background:#111; padding:25px; border-radius:15px; text-align:center;
+}
+.popup-content input{width:100%; margin:8px 0; padding:10px;}
+.popup-content button{margin-top:10px;}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+<a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="https://freepnglogo.com/images/all_img/1720112815hyundai-logo-transparent-image.png"  style="height: 36px; width:auto;">
+  <span class="ms-2 fw-bold text-white">Hyundai</span>
+</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+
+      <li class="nav-item">
+        <a class="nav-link active" href="boostrapassignment.html">
+          <i class="bi bi-house-door-fill"></i> Home
+        </a>
+      </li>
+
+      
+
+      <li class="nav-item">
+        <a class="nav-link" href="click to buy.html">
+          <i class="fa-brands fa-servicestack"></i> Click! To Buy
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">
+          <i class="fa-brands fa-intercom"></i>Connect to services 
+        </a>
+      </li>
+      
+<li class="nav-item">
+        <a class="nav-link" href="connect to us.html">
+          <i class="bi bi-envelope-fill"></i> Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section class="venue-section">
+  <h1 class="venue-title">Venue Price in Mumbai</h1>
+
+  <div class="venue-card">
+    <div class="venue-img">
+      <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/141113/venue-exterior-right-front-three-quarter.jpeg" alt="Hyundai Venue">
+    </div>
+
+    <div class="venue-info">
+      <h2>Hyundai Venue HX 2 1.2 Petrol MT</h2>
+      <p>The Hyundai Venue on-road price in Mumbai starts at <strong>₹9.39 Lakh</strong> and goes up to <strong>₹18.91 Lakh</strong>. Automatic variants start from ₹12.81 Lakh, and diesel variants from ₹11.69 Lakh.</p>
+
+      <div class="price-box">
+        <div class="price-row"><span>Ex-Showroom Price</span><span>₹7,99,900</span></div>
+        <div class="price-row"><span>Registration</span><span>₹94,848</span></div>
+        <div class="price-row"><span>Insurance</span><span>₹43,461</span></div>
+        <div class="price-row"><span>Other Charges</span><span>₹500</span></div>
+        <div class="price-row total"><span>On Road Price (Mumbai)</span><span>₹9,38,709</span></div>
+      </div>
+
+      <a href="buy.html" class="buy-btn">🚗 Click to Buy</a>
+    </div>
+  </div>
+</section>
+<div style="margin-top:25px; display:flex; gap:15px; flex-wrap:wrap;">
+  <button class="buy-btn" onclick="openEMI()">💰 EMI Calculator</button>
+  <button class="buy-btn" onclick="changeColor()">🎨 Change Color</button>
+  <a class="buy-btn" href="https://wa.me/919999999999?text=Hi%20I%20want%20to%20book%20Hyundai%20Venue" target="_blank">📲 WhatsApp Book Now</a>
+  <button class="buy-btn" onclick="openCheckout()">💳 Checkout / Razorpay</button>
+</div>
+
+
+<div style="margin-top:20px;">
+  <a href="login.html" class="buy-btn">🔐 Login</a>
+  <a href="admin.html" class="buy-btn">🛠 Admin Panel</a>
+</div>
+<div id="emiPopup" class="popup">
+  <div class="popup-content">
+    <h2>EMI Calculator</h2>
+    <input type="number" id="price" placeholder="Car Price (₹)" />
+    <input type="number" id="rate" placeholder="Interest Rate (%)" />
+    <input type="number" id="tenure" placeholder="Tenure (Years)" />
+    <button onclick="calcEMI()">Calculate EMI</button>
+    <p id="emiResult"></p>
+    <button onclick="closeEMI()">Close</button>
+  </div>
+</div>
+<section class="venue-section">
+  <h1 class="venue-title">Hyundai Creta</h1>
+
+  <div class="venue-card">
+    <div class="venue-img">
+      <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/Highlights/knightking/cretaknightkingbig2.jpg" alt="Hyundai Venue">
+    </div>
+
+    <div class="venue-info">
+      <h2>Hyundai Creata HX 2 1.2 Petrol MT</h2>
+      <p>The Hyundai Venue on-road price in Mumbai starts at <strong>₹9.39 Lakh</strong> and goes up to <strong>₹18.91 Lakh</strong>. Automatic variants start from ₹12.81 Lakh, and diesel variants from ₹11.69 Lakh.</p>
+
+      <div class="price-box">
+        <div class="price-row"><span>Ex-Showroom Price</span><span>Rs. 10,79,000</span></div>
+        <div class="price-row"><span>Registration</span><span>Rs. 1,40,229</span></div>
+        <div class="price-row"><span>Insurance</span><span>₹43,461</span></div>
+        <div class="price-row"><span>Other Charges</span><span>₹500</span></div>
+        <div class="price-row total"><span>On Road Price (Mumbai)</span><span>₹9,38,709</span></div>
+      </div>
+
+      <a href="buy.html" class="buy-btn">🚗 Click to Buy</a>
+    </div>
+  </div>
+</section>
+<div style="margin-top:25px; display:flex; gap:15px; flex-wrap:wrap;">
+  <button class="buy-btn" onclick="openEMI()">💰 EMI Calculator</button>
+  <button class="buy-btn" onclick="changeColor()">🎨 Change Color</button>
+  <a class="buy-btn" href="https://wa.me/919999999999?text=Hi%20I%20want%20to%20book%20Hyundai%20Venue" target="_blank">📲 WhatsApp Book Now</a>
+  <button class="buy-btn" onclick="openCheckout()">💳 Checkout / Razorpay</button>
+</div>
+<div style="margin-top:20px;">
+  <a href="login.html" class="buy-btn">🔐 Login</a>
+  <a href="admin.html" class="buy-btn">🛠 Admin Panel</a>
+</div>
+<div id="emiPopup" class="popup">
+  <div class="popup-content">
+    <h2>EMI Calculator</h2>
+    <input type="number" id="price" placeholder="Car Price (₹)" />
+    <input type="number" id="rate" placeholder="Interest Rate (%)" />
+    <input type="number" id="tenure" placeholder="Tenure (Years)" />
+    <button onclick="calcEMI()">Calculate EMI</button>
+    <p id="emiResult"></p>
+    <button onclick="closeEMI()">Close</button>
+  </div>
+</div>
+<footer class="hyundai-footer">
+  <div class="container">
+
+    <div class="footer-logo text-center">
+      <img src="https://www.hyundai.com/content/dam/hyundai/in/en/images/common/footer_logo_pc.png" alt="Hyundai Logo">
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#carsFooter">HYUNDAI CARS</h5>
+        <ul class="collapse show" id="carsFooter">
+          <li><a href="#">SUV Cars</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Creta</a></li>
+          <li><a href="#">Exter</a></li>
+          <li><a href="#">Alcazar</a></li>
+          <li><a href="#">Sedan Cars</a></li>
+          <li><a href="#">Verna</a></li>
+          <li><a href="#">Hatchback Cars</a></li>
+          <li><a href="#">i20</a></li>
+          <li><a href="#">Electric Cars</a></li>
+          <li><a href="#">Ioniq 5</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#buyFooter">CLICK TO BUY</h5>
+        <ul class="collapse show" id="buyFooter">
+          <li><a href="#">Online Booking</a></li>
+          <li><a href="#">Online Finance</a></li>
+          <li><a href="#">Shopping Assist</a></li>
+          <li><a href="#">Request a Test Drive</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">EV Charging Station</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#serviceFooter">HYUNDAI SERVICE</h5>
+        <ul class="collapse show" id="serviceFooter">
+          <li><a href="#">Book a Service</a></li>
+          <li><a href="#">Warranty Policy</a></li>
+          <li><a href="#">Roadside Assistance</a></li>
+          <li><a href="#">Service Package</a></li>
+          <li><a href="#">Owner’s Manual</a></li>
+          <li><a href="#">PMS Charts</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#storyFooter">HYUNDAI STORY</h5>
+        <ul class="collapse show" id="storyFooter">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="footer-social mt-3">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom mt-4">
+      <div>© 2026 Hyundai Motor India. All Rights Reserved.</div>
+      <div>Hyundai Suppliers | Hyundai Worldwide</div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let colors = [
+  "https://www.hyundai.com/content/dam/hyundai/in/en/data/vehicle-thumbnail/Thumbnail/venue_thumbnail_pc.png",
+  "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/Highlights/knightking/cretakingdeadside.jpg",
+  "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/Highlights/knightking/srkdpkingcreta.jpg"
+];
+
+let i = 0;
+
+function changeColor(){
+  i = (i + 1) % colors.length;
+  document.querySelector(".venue-img img").src = colors[i];
+}
+
+function openEMI(){
+  document.getElementById("emiPopup").style.display = "flex";
+}
+
+function closeEMI(){
+  document.getElementById("emiPopup").style.display = "none";
+}
+
+function calcEMI(){
+  let p = document.getElementById("price").value;
+  let r = document.getElementById("rate").value / 12 / 100;
+  let n = document.getElementById("tenure").value * 12;
+
+  let emi = (p * r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
+  document.getElementById("emiResult").innerHTML = "Monthly EMI: ₹" + emi.toFixed(0);
+}
+
+function openCheckout(){
+  alert("Razorpay Checkout Demo – Replace with real Razorpay script!");
+}
+</script>
+
+</body>
+
+</html>

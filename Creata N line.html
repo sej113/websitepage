@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+    .hero-bg {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.section {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+  }
+
+
+  .image-scroll {
+    width: 50%;
+    height: 420px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    scroll-behavior: smooth;
+  }
+
+  .image-scroll img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+  }
+
+  .image-scroll img:hover {
+    transform: scale(1.05);
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    line-height: 1.7;
+    color: #ccc;
+  }
+
+
+  @media(max-width: 768px){
+    .section{
+      flex-direction: column;
+    }
+    .image-scroll, .content{
+      width:100%;
+    }
+    .image-scroll{
+      height:300px;
+    }
+  }
+  .adas-section {
+  background: linear-gradient(135deg, #0c0c0c, #111);
+  color: #fff;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.adas-title {
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff2d2d, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.adas-text {
+  max-width: 850px;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #ddd;
+}
+.adas-slider {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.slide-card {
+  min-width: 280px;
+  text-align: center;
+}
+
+.slide-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: 0.4s ease;
+}
+
+.slide-card img:hover {
+  transform: scale(1.08);
+}
+
+.slide-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffb347;
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+<a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="https://freepnglogo.com/images/all_img/1720112815hyundai-logo-transparent-image.png"  style="height: 36px; width:auto;">
+  <span class="ms-2 fw-bold text-white">Hyundai</span>
+</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+
+      <li class="nav-item">
+        <a class="nav-link active" href="boostrapassignment.html">
+          <i class="bi bi-house-door-fill"></i> Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="click to buy.html">
+          <i class="fa-brands fa-servicestack"></i> Click! To Buy
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">
+          <i class="fa-brands fa-intercom"></i>Connect to services 
+        </a>
+      </li>
+      
+<li class="nav-item">
+        <a class="nav-link" href="connect to us.html">
+          <i class="bi bi-envelope-fill"></i> Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="section">
+
+
+  <div class="image-scroll">
+    <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/highlights/knight/cretanlinebig2.jpg" />
+    <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/highlights/knight/cretanlinebig1.jpg" />
+    <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/highlights/knight/cretanlinedash.jpg" />
+    <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/highlights/knight/cretanlinebig4.jpg" />
+    <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/creta-n-line-airbag_2.jpg" />
+  </div>
+  <div class="content">
+    <h1>CRETA King Limited Edition</h1>
+    <p>
+      The Hyundai CRETA King Limited Edition exudes power and elegance.  
+      Designed for those who command the road with style, this edition blends
+      bold aesthetics with premium comfort.
+    </p>
+    <p>
+      With advanced features, aggressive stance, and refined interiors,  
+      CRETA King is built to dominate every journey.
+    </p>
+  </div>
+
+</div>
+<section class="adas-section">
+  <h2 class="adas-title">Hyundai SmartSense – Level 2 ADAS</h2>
+
+  <p class="adas-text">
+    Hyundai CRETA N Line isn't just about adrenaline-pumping performance, it's about driving with confidence and composure.
+    That's where Hyundai SmartSense Level 2 ADAS comes in.
+  </p>
+
+  <p class="adas-text">
+    Imagine navigating twisty roads calmly, knowing the SUV has your back. From staying in lane to maintaining distance, the Level 2 ADAS handles it all seamlessly.
+  </p>
+
+  <p class="adas-text">
+    With Hyundai SmartSense Level 2 ADAS, performance meets peace of mind — every drive is yours to command.
+  </p>
+
+
+  <div class="adas-slider">
+    <div class="slider-track">
+
+      <div class="slide-card">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/safety/pc/creta-n-line-suv-safety-ABS.jpg" />
+        <p class="slide-text">Electric parking brake with auto hold</p>
+      </div>
+
+      <div class="slide-card">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/safety/pc/creta-n-line-suv-safety-display.jpg" />
+        <p class="slide-text">Tyre pressure monitoring system: Highline</p>
+      </div>
+
+      <div class="slide-card">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/safety/pc/creta-n-line-suv-safety.jpg" />
+        <p class="slide-text">Hill start assist control</p>
+      </div>
+
+      <div class="slide-card">
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta-n-line/highlights/knight/cretanlinefrontparkingsensors.jpg" />
+        <p class="slide-text">Front parking sensors
+
+</p>
+      </div>
+
+      <div class="slide-card">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" />
+        <p class="slide-text">Driver Attention Alert</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="hyundai-footer">
+  <div class="container">
+
+    <div class="footer-logo text-center">
+      <img src="https://www.hyundai.com/content/dam/hyundai/in/en/images/common/footer_logo_pc.png" alt="Hyundai Logo">
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#carsFooter">HYUNDAI CARS</h5>
+        <ul class="collapse show" id="carsFooter">
+          <li><a href="Venue Nline .html">SUV Cars</a></li>
+          <li><a href="Venue.html">Venue</a></li>
+          <li><a href="Create.html">Creta</a></li>
+          <li><a href="Exter.html">Exter</a></li>
+          <li><a href="Creata N line.html">Alcazar</a></li>
+          <li><a href="#">Sedan Cars</a></li>
+          <li><a href="#">Verna</a></li>
+          <li><a href="#">Hatchback Cars</a></li>
+          <li><a href="#">i20</a></li>
+          <li><a href="#">Electric Cars</a></li>
+          <li><a href="#">Ioniq 5</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#buyFooter">CLICK TO BUY</h5>
+        <ul class="collapse show" id="buyFooter">
+          <li><a href="#">Online Booking</a></li>
+          <li><a href="#">Online Finance</a></li>
+          <li><a href="#">Shopping Assist</a></li>
+          <li><a href="#">Request a Test Drive</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">EV Charging Station</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#serviceFooter">HYUNDAI SERVICE</h5>
+        <ul class="collapse show" id="serviceFooter">
+          <li><a href="#">Book a Service</a></li>
+          <li><a href="#">Warranty Policy</a></li>
+          <li><a href="#">Roadside Assistance</a></li>
+          <li><a href="#">Service Package</a></li>
+          <li><a href="#">Owner’s Manual</a></li>
+          <li><a href="#">PMS Charts</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-12">
+        <h5 data-bs-toggle="collapse" data-bs-target="#storyFooter">HYUNDAI STORY</h5>
+        <ul class="collapse show" id="storyFooter">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="footer-social mt-3">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom mt-4">
+      <div>© 2026 Hyundai Motor India. All Rights Reserved.</div>
+      <div>Hyundai Suppliers | Hyundai Worldwide</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+
+</script>
+</body>
+</html>
